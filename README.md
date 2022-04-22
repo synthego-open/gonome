@@ -14,18 +14,25 @@ Build a software service for designing genomic edit implementations across thera
 * Mismatch search for CRISPR guide and primer off targets
 * Saving meta information to guide target database
 * Fundamental DNA calculations (amino acid conversion, binding temp, etc)
+* Design algorithm functions (CDS ratio, donor homology etc)
+
+### Development Requirements
+* 80% or greater unit test coverage 
+* Unit tests run locally and complete in less than 5 minutes on a typical laptop
+* Containerized
+* At least one approving reviewer with write permission to merge into main branch
 
 ### Performance Requirements
 * Calculate an edit design in 1 minute or less
-* Kick off ~20k or more design requests at a time
+* Kick off ~20k or more design requests at a time in cloud deployment
+
+### Technical Decisions
+* To be decided by benchmarking
 
 ### Out of Scope
 * Hypothesis generation of edits from functional data
 * Frontend visualization
 * Calculating editing efficiency (can look up in stored metadata)
-
-### Technical Decisions
-* Golang as core implementation language
 
 ### MVP
 * Guide off target search on reference genomes
